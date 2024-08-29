@@ -1,0 +1,64 @@
+.filter-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.sidebar1 {
+    width: 250px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    
+    z-index: 999;
+    display: none;
+}
+
+.sidebar1.show {
+    left: 0;
+    display: block;
+    transition: left 0.3s ease;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+#price-value {
+    margin-left: 10px;
+}
+
+.products-container {
+    margin-left: 50px;
+    padding: 20px;
+    width: 100%;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,20 @@
+let suggestions = [
+    "Shirts",
+    "Kurta",
+    "Shoes",
+    "Jeans",
+    "Pants",
+    "T-shirts",
+    "Nike",
+    "PUMA",
+    "adidas",
+    "sandals",
+    "carpet",
+    "Self",
+    "Salt",
+"Sky",
+"Silk",
+"Seed",
+"Soap",
+
+];

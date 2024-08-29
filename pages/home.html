@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/filter.css">
+    <link rel="stylesheet" href="l./css/oadscreen.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <title>F A C T O R Y</title>
+    <link
+    rel="icon"
+    href=
+"../Logofactory.png"
+    type="image/x-icon"
+/>
+</head>
+<body onload="myFunction()" style="margin:0;">
+   
+   <section id="header">
+    <label  id="dark-change"></label>
+    <a href="./home.html">  <img src=".../images/Logofactory.png"  alt="" id="logo" /> </a>
+    <ul id="sidebar" >
+        
+        
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <li class="nav-link services">
+                                
+            <a href="HOME.HTML"><b></b></a>
+        
+        
+    </li>
+        <li class="nav-link services">
+            
+            <a href="HOME.HTML">Home</a>
+        
+        
+    </li>
+        <li class="nav-link services">
+            
+                <a  href="SHOP.HTML">Shop</a>
+            
+
+        </li>
+        <li class="nav-link services">
+            
+                <a href="shoe.HTML">Shoes </a>
+            
+                                
+        </li>
+        <li class="nav-link services">
+            
+                <a href="About.HTML">About</a>
+            
+            
+        </li>
+        <li class="nav-link services">
+
+                <a href="contact.HTML">Contact</a>
+            
+            
+        </li>
+
+        
+        <div class="box">
+        <input type="text" placeholder="Search..">
+        <a href="">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+<br>
+</ul>
+    
+        <nav class="navbar">
+            
+            
+         
+            
+                        
+                        
+                        <ul class="nav-links" >
+                            <li class="nav-link services">
+                                
+                                <a href="HOME.HTML"><b></b></a>
+                            
+                            
+                        </li>
+                            <li class="nav-link services">
+                                
+                                <a href="../pages/home.html">Home</a>
+                            
+                            
+                        </li>
+                            <li class="nav-link services">
+                                
+                                    <a  href="../pages/SHOP.HTML">Shop</a>
+                                
+
+                            </li>
+                            <li class="nav-link services">
+                                
+                                    <a href="../pages/shoe.HTML">Shoes </a>
+                                
+                                                    
+                            </li>
+                            <li class="nav-link services">
+                                
+                                    <a href="../pages/About.HTML">About</a>
+                                
+                                
+                            </li>
+                            <li class="nav-link services">
+
+                                    <a href="../pages/contact.HTML">Contact</a>
+                                
+                                
+                            </li>
+                            <div class="box">
+                                
+                                <div class="search-input">
+                                   
+                                    <input type="text" id="input-box" placeholder="Search.." autocomplete="off">
+                                    
+                                    
+                                    <div class="autocom-box">
+                                        <li>Shirts</li>
+                                        <li>Jeans</li>
+                                        <li>Kurta</li>
+                                        <li>Shoes</li>
+                                    </div>
+                           
+                            
+                                </div>
+                                <a href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            
+                            </div>
+                           
+                        </ul>
+                    
+                    
+               
+                        <li><a href="../pages/cart.html"><i class="fa fa-shopping-cart" ></i></a></li>          
+
+        
+</nav>
+
+<button class="open-btn" id="openBtn">&#9776;</button>
+<!--<div id="mobile">
+    <i id="bar" class="fas fa-outdent"></i>
+</div> -->
+
+    
+<div class="sidebar1" id="sidebar1">
+    <h2>Filter Products</h2>
+    <div class="filter">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="home">Home</option>
+        </select>
+    </div>
+  
+    <div class="filter">
+        <label for="price-range">Price Range:</label>
+        <input type="range" id="price-range" min="0" max="1000" step="50" value="1000">
+        <span id="price-value">$1000</span>
+    </div>
+    <button id="apply-filters">Apply Filters</button>
+</div>
+
+
+
+<div class="profile-dropdown">
+    <div onclick="toggle()" >
+      <div class="profile-img">
+        <img src="../images/profile-user.png" id="profile" alt="" />
+      </div>
+    </div>
+
+    <ul class="profile-dropdown-list">
+      
+        <li class="profile-dropdown-list-item">
+            <div>Hello <span id="loggedUserFName"></span></div>
+        </li>
+
+      
+
+      <li class="profile-dropdown-list-item">
+        <a href="#">
+          <i class="fa-regular fa-circle-question"></i>
+          Help & Support
+        </a>
+      </li>
+      <hr />
+      <li class="profile-dropdown-list-item">
+        <a href="#">
+          <i class="fa-regular fa-user"></i>
+          Edit Profile
+        </a>
+      </li>
+      <li class="profile-dropdown-list-item">
+        <a href="#">
+          <i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
+          Log out
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="home">
+    
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>Save more with coupons and up to 70% off!</p>
+    <button><b>Shop now</b></button>
+</section>
+
+<section id="feature" class="section-p1">
+    <div class="fe-box">
+        <img src="../images/f1.png" alt="">
+        <h6>Free shipping</h6>
+    </div>
+    <div class="fe-box">
+        <img src="../images/f2.png" alt="">
+        <h6>Online Order</h6>
+    </div>
+    <div class="fe-box">
+        <img src="../images/f3.png" alt="">
+        <h6>Save Money</h6>
+    </div>
+    <div class="fe-box">
+        <img src="../images/f4.png" alt="">
+        <h6>Promotions</h6>
+    </div>
+    <div class="fe-box">
+        <img src="../images/f6.png" alt="">
+        <h6>F24/7 Support</h6>
+    </div>
+</section>
+<section id="product1" class="section-p1">
+<h2>Featured Products</h2>
+<p>Summer Collection New Mordern Design</p>
+<div class="pro-container">
+    <div class="pro">
+        <img src="../garments/Featured-products/g1.jpg" alt="">
+        <div class="des">
+            <span>Adidas</span>
+            <h5>Hoodie</h5>
+           <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4> ₹2220</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton11" class="wishlist-btn">Add to Wishlist</button>
+   
+    </div>
+
+
+
+    <div class="pro">
+        <img src="../garments/Featured-products/g3.jpg" alt="">
+        <div class="des">
+            <span>Royal Kurta</span>
+            <h5>Pathani</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4>₹3950</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton10" class="wishlist-btn">Add to Wishlist</button>
+    </div>
+
+
+
+    <div class="pro">
+        <img src="../garments/Featured-products/g4(i).jpg" alt="">
+        <div class="des">
+            <span>Louis Vuitton</span>
+            <h5>Formal Shirt</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4> ₹3700</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton9" class="wishlist-btn">Add to Wishlist</button>
+    </div>
+
+
+    <div class="pro">
+        <img src="../garments/Featured-products/g5.jpg" alt="">
+        <div class="des">
+            <span>PUMA</span>
+            <h5>Printed T-Shirt</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4> ₹3400</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton8" class="wishlist-btn">Add to Wishlist</button>
+    </div>
+
+
+    <div class="pro">
+        <img src="../garments/Featured-products/hoodie1.jpg" alt="">
+        <div class="des">
+            <span>Allen Solly</span>
+            <h5>Hoodie</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4> ₹2400</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton7" class="wishlist-btn">Add to Wishlist</button>
+    </div>
+    <div class="pro">
+        <img src="../garments/Featured-products/jacket.jpg" alt="">
+        <div class="des">
+            <span>WILDCRAFT</span>
+            <h5>Winter jacket</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4> ₹1600</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton6" class="wishlist-btn">Add to Wishlist</button>
+    
+        
+    </div>
+    <div class="pro">
+        <img src="../garments/Featured-products/sweater.jpg" alt="">
+        <div class="des">
+            <span>Lee</span>
+            <h5>Hoodie</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4> ₹1118</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton5" class="wishlist-btn">Add to Wishlist</button>
+    </div>
+    <div class="pro">
+        <img src="/shoes/S7.jpg" alt="">
+        <div class="des">
+            <span>LIBERTY</span>
+            <h5>Sport shoes</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4> ₹2665</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton4" class="wishlist-btn">Add to Wishlist</button>
+    </div>
+    <div class="pro">
+        <img src="/shoes/S6.jpg" alt="">
+        <div class="des">
+            <span>RED TAPE</span>
+            <h5>Artemis Running Shoes</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4> ₹1500</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton3" class="wishlist-btn">Add to Wishlist</button>
+    </div>
+    <div class="pro">
+        <img src="/shoes/S5.jpg" alt="">
+        <div class="des">
+            <span>CAMPUS</span>
+            <h5>Walking Sports shoes</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4> ₹2090</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton2" class="wishlist-btn">Add to Wishlist</button>
+    </div>
+    <div class="pro">
+        <img src="/shoes/S4.jpg"  alt="">
+        <div class="des">
+            <span>ATOM</span>
+            <h5>Sneakers for Men</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4> ₹3060</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton1" class="wishlist-btn">Add to Wishlist</button>
+    </div>
+    <div class="pro">
+        <img src="../shoes/S3.jpg"  alt="">
+        <div class="des">
+            <span>NIKE</span>
+            <h5>Running Shoes</h5>
+            <div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			
+            <h4>₹ 2225</h4>        
+        </div>
+        <br>
+        <button id="wishlistButton" class="wishlist-btn">Add to Wishlist</button>
+    </div>
+</div>
+
+</section> 
+<section id="banner" class="section-m1">
+    <h4>Repair Services</h4>
+    <h2>Up to <span>70% off </span>All t-shirts and Accessories</h2>
+    <button class="normal">Explore More</button>
+</section>
+<section id="sm-banner" class="section-p1">
+ <div class="banner-box">
+    <h2>Top Deals on Grooming</h2>
+    <h4>Up to 60% off</h4>
+    <span></span>
+    <button class="white">Learn More</button>
+ </div>
+ <div class="banner-box banner-box2">
+    <h2>Top Deals on Grooming</h2>
+    <h4>Up to 60% off</h4>
+    <span></span>
+    <button class="white">Learn More</button>
+ </div>
+ 
+
+
+</section>
+<section id="banner3">
+    <div class="banner-box">
+        <h2>SEASONAL SALE</h2>
+        <h3>Winter Collection -50% OFF</h3>
+    </div>
+    <div class="banner-box banner-box2">
+        <h2>SEASONAL SALE</h2>
+        <h3>Winter Collection -50% OFF</h3>
+    </div>
+    <div class="banner-box banner-box3">
+        <h2>SEASONAL SALE</h2>
+        <h3>Winter Collection -50% OFF</h3>
+    </div>
+</section>
+<footer class="section-p1">
+    <div class="col">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> 4, No ichlabad P.o: srepalli Burdwan:713103</p>
+    <p><strong>Phone:</strong>+91 8597 786 209 / (+91) 94 7449 1949</p>
+    <p><strong>Hours:</strong> 10:00 - 18:00, Mon-Sat</p>
+    <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+
+
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="./privacy_policy.html">Privacy Policy</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+   
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="../images/app.jpg" alt="">
+            <img src="./play.jpg" alt="">
+        </div>
+        <p>Secured payment Gateways</p>
+        <img src="../images/pay.png" alt="">
+    </div>
+    
+        Copyright &copy; <script> document.write(new Date().getFullYear())</script>
+    
+
+
+
+    </footer>
+    <!------------------------------------------------------POP-UP-->
+    <div class="popup hide-popup">
+        <div class="popup-content">
+          <div class="popup-close">
+            <i class='bx bx-x'></i>
+          </div>
+          <div class="popup-left">
+            <div class="popup-img-container">
+              <img class="popup-img" src="../images/pop.jpg.jpg" alt="popup">
+            </div>
+          </div>
+          <div class="popup-right">
+            <div class="right-content">
+              <h1>Get Discount <span>50%</span> Off</h1>
+              <p>Sign up to our newsletter and save 30% for you next purchase. No spam, we promise!
+              </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="loader">
+        <script>
+            window.addEventListener("load", () => {
+                const loader = document.querySelector(".loader");
+              
+                loader.classList.add("loader--hidden");
+              
+                loader.addEventListener("transitionend", () => {
+                  document.body.removeChild(loader);
+                });
+              });
+              
+        </script>
+    <script src="../js/navbar.js">  
+    </script>
+    
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
+        <script src="../js/profile.js"></script>
+<script src="../js/alert.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/wishlist.js"></script>
+<script src="../js/filter.js"></script>
+<script type = "module" src ="../js/homepage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
