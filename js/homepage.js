@@ -55,10 +55,10 @@ const firebaseConfig = {
        
         var a=confirm("Are you sure you want to Log-Out?");
         if(a){
-            window.location.href='index.html';
+            window.location.href='../index.html';
             
         } else {
-            window.location.href='home.html';
+            window.location.href='../pages/home.html';
         }
     })
     .catch((error)=>{

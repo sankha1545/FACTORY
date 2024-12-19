@@ -5,8 +5,8 @@
     font-family:"poppins",sans-serif;
 }
 body{
-    background-color: #c9d6ff;
-    background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+    background-color: #a4daff;
+    background:linear-gradient(to right,#e2e2e2,#a4daff);
 }
 .container{
     background:#fff;
@@ -81,10 +81,10 @@ input:focus~label,input:not(:placeholder-shown)~label{
 }
 .recover a{
     text-decoration:none;
-    color:rgb(125,125,235);
+    color:rgb(152, 219, 241);
 }
 .recover a:hover{
-    color:blue;
+    color:rgb(86, 161, 232);
     text-decoration:underline;
 }
 button{
@@ -94,7 +94,7 @@ button{
     outline:none;
     border:none;
     width:100%;
-    background:rgb(125,125,235);
+    background:rgb(127, 180, 211);
     color:white;
     cursor:pointer;
     transition:0.9s;
@@ -110,8 +110,9 @@ button:hover{
 .icons{
     text-align:center;
 }
-.icons i{
-    color:rgb(125,125,235);
+.icons i {
+    color: #dfe9f5;
+    background:linear-gradient(to right,#ffe30d,#ea2c0e,#1cb94b,#019aff);
     padding:0.8rem 1.5rem;
     border-radius:10px;
     font-size:1.5rem;
@@ -133,7 +134,7 @@ button:hover{
     font-weight:bold;
 }
  #signUpButton, #signInButton{
-    color:rgb(125,125,235);
+    color:rgb(127, 180, 211);
     border:none;
     background-color:transparent;
     font-size:1rem;

@@ -1,4 +1,4 @@
-export function signIn() {
+ function signIn() {
     let oauth2endpoint = "https://accounts.google.com/o/oauth2/v2/auth";
     let form = document.createElement('form');
     form.setAttribute('method', 'GET');

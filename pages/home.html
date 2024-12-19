@@ -23,7 +23,7 @@
     <link
     rel="icon"
     href=
-"../Logofactory.png"
+"../images/Logofactory.png"
     type="image/x-icon"
 />
 </head>
@@ -169,39 +169,23 @@
 </div> -->
 
     
-<div class="sidebar1" id="sidebar1">
-    <h2>Filter Products</h2>
-    <div class="filter">
-        <label for="category">Category:</label>
-        <select id="category">
-            <option value="all">All</option>
-            <option value="electronics">Electronics</option>
-            <option value="fashion">Fashion</option>
-            <option value="home">Home</option>
-        </select>
-    </div>
+
   
-    <div class="filter">
-        <label for="price-range">Price Range:</label>
-        <input type="range" id="price-range" min="0" max="1000" step="50" value="1000">
-        <span id="price-value">$1000</span>
-    </div>
-    <button id="apply-filters">Apply Filters</button>
-</div>
+   
 
 
 
 <div class="profile-dropdown">
     <div onclick="toggle()" >
       <div class="profile-img">
-        <img src="../images/profile-user.png" id="profile" alt="" />
+        <img src="../images/profile-user.png" id="profile-img-sub" alt="" />
       </div>
     </div>
 
     <ul class="profile-dropdown-list">
       
         <li class="profile-dropdown-list-item">
-            <div>Hello <span id="loggedUserFName"></span></div>
+            <div>Hello <span id="lFName" > </span></div>
         </li>
 
       
@@ -214,7 +198,7 @@
       </li>
       <hr />
       <li class="profile-dropdown-list-item">
-        <a href="#">
+        <a href="../pages/profile.html">
           <i class="fa-regular fa-user"></i>
           Edit Profile
         </a>
@@ -631,6 +615,7 @@
               });
               
         </script>
+    </div>
     <script src="../js/navbar.js">  
     </script>
     

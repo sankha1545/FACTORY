@@ -48,7 +48,7 @@
         const docRef=doc(db, "users", user.uid);
         setDoc(docRef,userData)
         .then(()=>{
-            window.location.href='login.html';
+            window.location.href='../index.html';
         })
         .catch((error)=>{
             console.error("error writing document", error);
@@ -78,7 +78,7 @@
         showMessage('login is successful', 'signInMessage');
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
-        window.location.href='home.html';
+        window.location.href='../pages/home.html';
     })
     .catch((error)=>{
         const errorCode=error.code;
@@ -90,3 +90,23 @@
         }
     })
  })
+
+ // Function to update the user's first name after signing in
+  document.addEventListener('DOMContentLoaded', () => {
+            const userId = localStorage.getItem('loggedInUserId');
+            if (userId) {
+                const db = getFirestore();
+                const docRef = doc(db, "users", userId);
+                docRef.get().then((doc) => {
+                    if (doc.exists) {
+                        const userData = doc.data();
+                        const lFName = document.getElementById('lFName');
+                        lFName.textContent = userData.firstName;
+                    } else {
+                        console.log("No such document!");
+                    }
+                }).catch((error) => {
+                    console.log("Error getting document:", error);
+                });
+            }
+        });

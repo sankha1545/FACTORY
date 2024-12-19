@@ -214,7 +214,7 @@ a {
 /*-------------------------------------------------confirm box------------------------------------*/
 
   /*---------------------------confirm box---------------------*/
-#profile {
+.profile-img #profile-img-sub {
     width: 30px;
     cursor: pointer;
     margin-right:100px;
@@ -1270,7 +1270,70 @@ footer .copright{
     visibility: hidden;
   }
 
+  #profile{
+    background-color: rgb(198, 228, 238);
+    width: 1000px;
+    height: 800px;
+    margin-left: 400px;
+    margin-top: -800px;
+    border-radius: 20px;
+     /* Initial margin */
+    text-align: center;
+    line-height: 100px;
+    
+  }
+  #profile span{
+  display: flex;
+  margin-left: 20px;
+  }
 
+  #profile .ln {
+    margin-left: 20px;
+    width:950px;
+  }
+  #profile  li{
+  margin-left: -900px;
+ 
+  }
+  .Edit-profile-btn{
+    width:100px;
+    cursor: pointer;
+    background-color: #8fb2b6;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: #1a1a1a;
+  }
+  .Edit-profile-btn :hover{
+    color: #ec7f79;
+  }
+  #content-profile .content-profile-break{
+    width: 300px;
+    margin-left: 20px;
+  }
+  #content-profile .OverView{
+    width: 350px;
+    height: 150px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(198, 228, 238);
+  }
+  #content-profile .OverView:hover{
+    background-color:  rgb(178, 220, 234);
+  }
+
+#content-profile{
+    background-color: rgb(198, 228, 238);
+    width: 350px;
+    height: 800px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+     /* Initial margin */
+    text-align: center;
+    line-height: 100px;
+}
   /*-------------------------------------------------------PRIVACY POLICY---------------------------------------------*/
   .main h3{
     margin-left: 550px;
@@ -1371,6 +1434,7 @@ footer .copright{
 @media (max-width: 477px) {
     .section-p1{
         padding: 20px;
+        
     }
     #header {
         padding: 10px 30px;

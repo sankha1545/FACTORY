@@ -3,15 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add to Wishlist Button</title>
-    <link rel="stylesheet" href="cart2.css">
+    <title>Margin Example</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="product">
-        <h2>Product Name</h2>
-        <button class="wishlist-btn" onclick="addToWishlist(this)">Add to Wishlist</button>
+    <div id="content">
+        This is a box with margins.
     </div>
 
-    <script src="cart.js"></script>
+    <button onclick="changeMargin()">Change Margin</button>
+
+    <script >
+        function changeMargin() {
+            // Get the content div
+            const content = document.getElementById('content');
+        
+            // Change the margin
+            content.style.margin = '50px'; // New margin value
+        }
+        
+    </script>
+    <style>
+        #content {
+            background-color: lightblue;
+            width: 800px;
+            margin-left: 350px;
+            margin-top: 100px;
+            height: 600px;
+            border-radius: 40px;
+            /* Initial margin */
+            text-align: center;
+            line-height: 100px; /* Vertical center alignment */
+        }
+        
+    </style>
 </body>
 </html>
